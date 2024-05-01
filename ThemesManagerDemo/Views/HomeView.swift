@@ -8,64 +8,30 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var themeManager: ThemeManager
-    
+
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Theme Demo")
-                .font(themeManager.selectedTheme.largeTitleFont)
-                .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
-            
-            HStack(spacing: 20) {
-                Button(action: {
-                    // Confirm action
-                }) {
-                    Text("Confirm")
-                        .font(themeManager.selectedTheme.normalBtnTitleFont)
-                        .foregroundColor(themeManager.selectedTheme.affirmBtnTitleColor)
-                        .padding()
-                        .background(themeManager.selectedTheme.primaryThemeColor)
-                        .cornerRadius(8)
-                }
-                
-                Button(action: {
-                    // Cancel action
-                }) {
-                    Text("Cancel")
-                        .font(themeManager.selectedTheme.boldBtnTitleFont)
-                        .foregroundColor(themeManager.selectedTheme.negativeBtnTitleColor)
-                        .padding()
-                        .background(themeManager.selectedTheme.secondoryThemeColor)
-                        .cornerRadius(8)
-                }
-            }
-            
-            VStack(spacing: 10) {
-                Text("Text with different styles:")
-                    .font(themeManager.selectedTheme.bodyTextFont)
-                    .foregroundColor(themeManager.selectedTheme.bodyTextColor)
-                
-                Text("Title")
+            VStack(spacing: 5) {
+                Text("Forecast")
                     .font(themeManager.selectedTheme.textTitleFont)
                     .foregroundColor(themeManager.selectedTheme.bodyTextColor)
-                
-                Text("Body")
+                Text("Start date projected for May 6.")
                     .font(themeManager.selectedTheme.bodyTextFont)
-                    .foregroundColor(themeManager.selectedTheme.bodyTextColor)
                 
-                Text("Caption")
-                    .font(themeManager.selectedTheme.captionTxtFont)
-                    .foregroundColor(themeManager.selectedTheme.bodyTextColor)
             }
             .padding()
-            .background(themeManager.selectedTheme.textBoxColor)
+            //.background(themeManager.selectedTheme.textBoxColor)
+            .background(Color.clear) // Set the background color to transparent
             .cornerRadius(8)
+            .border(themeManager.selectedTheme.primaryThemeColor, width: 1) // Set the border color and width
             
             Spacer()
-        }
+        
         .padding(.top, 150.0)
         .edgesIgnoringSafeArea(.all)
-    }
-}
+        
+        
+    } //end body view
+} //end home view
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
