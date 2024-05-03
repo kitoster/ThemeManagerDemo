@@ -27,6 +27,7 @@
 		8B67743A2B29D1C1000EC386 /* ThemesManagerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6774392B29D1C1000EC386 /* ThemesManagerDemoTests.swift */; };
 		8B6774442B29D1C1000EC386 /* ThemesManagerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6774432B29D1C1000EC386 /* ThemesManagerDemoUITests.swift */; };
 		8B6774462B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6774452B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift */; };
+		CE106DFB2BE4878000288DB5 /* Collapsible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFA2BE4878000288DB5 /* Collapsible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		8B67743F2B29D1C1000EC386 /* ThemesManagerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemesManagerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6774432B29D1C1000EC386 /* ThemesManagerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesManagerDemoUITests.swift; sourceTree = "<group>"; };
 		8B6774452B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesManagerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE106DFA2BE4878000288DB5 /* Collapsible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collapsible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				8B67742A2B29D1BF000EC386 /* ContentView.swift */,
 				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
+				CE106DFA2BE4878000288DB5 /* Collapsible.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				8B6774292B29D1BF000EC386 /* ThemesManagerDemoApp.swift in Sources */,
 				8B30EAAC2B2ADDCA0015C92D /* ThemeManager.swift in Sources */,
 				8B30EAAE2B2ADDE90015C92D /* ThemeProtocol.swift in Sources */,
+				CE106DFB2BE4878000288DB5 /* Collapsible.swift in Sources */,
 				8B30EAB02B2ADE000015C92D /* MainTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

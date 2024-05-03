@@ -10,14 +10,16 @@ struct HomeView: View {
     @EnvironmentObject private var themeManager: ThemeManager
 
     var body: some View {
-            VStack(spacing: 5) {
-                Text("Forecast")
-                    .font(themeManager.selectedTheme.textTitleFont)
-                    .foregroundColor(themeManager.selectedTheme.bodyTextColor)
-                Text("Start date projected for May 6.")
-                    .font(themeManager.selectedTheme.bodyTextFont)
-                
-            }
+        VStack(spacing: 5) {
+                   Collapsible(label: {
+                       Text("Forecast")
+                           .font(themeManager.selectedTheme.textTitleFont)
+                           .foregroundColor(themeManager.selectedTheme.bodyTextColor)
+                   }, content: {
+                       Text("Start date projected for May 6.")
+                           .font(themeManager.selectedTheme.bodyTextFont)
+                   })
+               }
             .padding()
             //.background(themeManager.selectedTheme.textBoxColor)
             .background(Color.clear) // Set the background color to transparent
