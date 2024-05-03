@@ -10,10 +10,10 @@ import SwiftUI
  */
 struct Hacker: ThemeProtocol {
     var largeTitleFont: Font = .custom("MartelSans-ExtraBold", size: 30.0)
-    var textTitleFont: Font = .custom("MartelSans-ExtraBold", size: 22.0)
+    var textTitleFont: Font = .custom("Menlo", size: 20.0)
     var normalBtnTitleFont: Font = .custom("MartelSans-SemiBold", size: 20.0)
     var boldBtnTitleFont: Font = .custom("MartelSans-Bold", size: 20.0)
-    var bodyTextFont: Font = .custom("MartelSans-Light", size: 18.0)
+    var bodyTextFont: Font = .custom("Menlo", size: 18.0)
     var captionTxtFont: Font = .custom("MartelSans-SemiBold", size: 20.0)
     
     var primaryThemeColor: Color { return Color("asPrimaryThemeColor") }

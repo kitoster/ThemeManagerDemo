@@ -30,6 +30,7 @@
 		CE106DFD2BE56F9300288DB5 /* AddtoLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */; };
 		CE106DFF2BE57FAF00288DB5 /* HackerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFE2BE57FAF00288DB5 /* HackerTheme.swift */; };
 		CE106E012BE5802D00288DB5 /* UsaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106E002BE5802D00288DB5 /* UsaTheme.swift */; };
+		CE106E042BE5884200288DB5 /* Menlo.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CE106E032BE5884200288DB5 /* Menlo.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtoLog.swift; sourceTree = "<group>"; };
 		CE106DFE2BE57FAF00288DB5 /* HackerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerTheme.swift; sourceTree = "<group>"; };
 		CE106E002BE5802D00288DB5 /* UsaTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsaTheme.swift; sourceTree = "<group>"; };
+		CE106E032BE5884200288DB5 /* Menlo.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Menlo.ttc; path = ../../../../../../../System/Library/Fonts/Menlo.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +110,9 @@
 			children = (
 				8B30EAAB2B2ADDCA0015C92D /* ThemeManager.swift */,
 				8B30EAAD2B2ADDE90015C92D /* ThemeProtocol.swift */,
-				CE106E002BE5802D00288DB5 /* UsaTheme.swift */,
 				8B30EAAF2B2ADE000015C92D /* MainTheme.swift */,
 				CE106DFE2BE57FAF00288DB5 /* HackerTheme.swift */,
+				CE106E002BE5802D00288DB5 /* UsaTheme.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -139,6 +141,7 @@
 		8B30EAB72B2AE3E00015C92D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				CE106E032BE5884200288DB5 /* Menlo.ttc */,
 				8B30EABC2B2AE4220015C92D /* MartelSans-Black.ttf */,
 				8B30EAB82B2AE4220015C92D /* MartelSans-Bold.ttf */,
 				8B30EABB2B2AE4220015C92D /* MartelSans-ExtraBold.ttf */,
@@ -315,6 +318,7 @@
 				8B30EABF2B2AE4230015C92D /* MartelSans-Bold.ttf in Resources */,
 				8B30EAC52B2AE4230015C92D /* MartelSans-SemiBold.ttf in Resources */,
 				8B30EAC32B2AE4230015C92D /* MartelSans-Black.ttf in Resources */,
+				CE106E042BE5884200288DB5 /* Menlo.ttc in Resources */,
 				8B6774302B29D1C1000EC386 /* Preview Assets.xcassets in Resources */,
 				8B30EAC72B2AE4580015C92D /* Colors.xcassets in Resources */,
 				8B30EAC12B2AE4230015C92D /* MartelSans-Regular.ttf in Resources */,

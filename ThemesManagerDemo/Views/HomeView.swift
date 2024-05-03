@@ -1,4 +1,5 @@
 import SwiftUI
+import Foundation
 
 struct HomeView: View {
     @EnvironmentObject private var themeManager: ThemeManager
