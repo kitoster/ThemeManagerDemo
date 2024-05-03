@@ -10,7 +10,7 @@ import SwiftUI
  */
 struct Main: ThemeProtocol {
     var largeTitleFont: Font = .custom("MartelSans-ExtraBold", size: 30.0)
-    var textTitleFont: Font = .custom("MartelSans-ExtraBold", size: 24.0)
+    var textTitleFont: Font = .custom("MartelSans-ExtraBold", size: 22.0)
     var normalBtnTitleFont: Font = .custom("MartelSans-SemiBold", size: 20.0)
     var boldBtnTitleFont: Font = .custom("MartelSans-Bold", size: 20.0)
     var bodyTextFont: Font = .custom("MartelSans-Light", size: 18.0)

@@ -28,6 +28,7 @@
 		8B6774442B29D1C1000EC386 /* ThemesManagerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6774432B29D1C1000EC386 /* ThemesManagerDemoUITests.swift */; };
 		8B6774462B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6774452B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift */; };
 		CE106DFB2BE4878000288DB5 /* Collapsible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFA2BE4878000288DB5 /* Collapsible.swift */; };
+		CE106DFD2BE56F9300288DB5 /* AddtoLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		8B6774432B29D1C1000EC386 /* ThemesManagerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesManagerDemoUITests.swift; sourceTree = "<group>"; };
 		8B6774452B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesManagerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE106DFA2BE4878000288DB5 /* Collapsible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collapsible.swift; sourceTree = "<group>"; };
+		CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtoLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				8B67742A2B29D1BF000EC386 /* ContentView.swift */,
 				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
+				CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */,
 				CE106DFA2BE4878000288DB5 /* Collapsible.swift */,
 			);
 			path = Views;
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE106DFD2BE56F9300288DB5 /* AddtoLog.swift in Sources */,
 				8B30EAB22B2ADE210015C92D /* AsianTheme.swift in Sources */,
 				8B30EAB52B2AE0190015C92D /* HomeView.swift in Sources */,
 				8B67742B2B29D1BF000EC386 /* ContentView.swift in Sources */,
