@@ -8,7 +8,7 @@ import SwiftUI
 /**
  Asian Theme
  */
-struct Asian: ThemeProtocol {
+struct Hacker: ThemeProtocol {
     var largeTitleFont: Font = .custom("MartelSans-ExtraBold", size: 30.0)
     var textTitleFont: Font = .custom("MartelSans-ExtraBold", size: 22.0)
     var normalBtnTitleFont: Font = .custom("MartelSans-SemiBold", size: 20.0)

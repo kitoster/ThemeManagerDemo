@@ -9,7 +9,7 @@ import SwiftUI
  Theme Manager
  */
 class ThemeManager: ObservableObject {
-    @Published var selectedTheme: ThemeProtocol = Asian()
+    @Published var selectedTheme: ThemeProtocol = Hacker()
     
     func setTheme(_ theme: ThemeProtocol) {
         selectedTheme = theme

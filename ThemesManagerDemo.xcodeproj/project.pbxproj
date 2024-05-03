@@ -10,7 +10,6 @@
 		8B30EAAC2B2ADDCA0015C92D /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30EAAB2B2ADDCA0015C92D /* ThemeManager.swift */; };
 		8B30EAAE2B2ADDE90015C92D /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30EAAD2B2ADDE90015C92D /* ThemeProtocol.swift */; };
 		8B30EAB02B2ADE000015C92D /* MainTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30EAAF2B2ADE000015C92D /* MainTheme.swift */; };
-		8B30EAB22B2ADE210015C92D /* AsianTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30EAB12B2ADE210015C92D /* AsianTheme.swift */; };
 		8B30EAB52B2AE0190015C92D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30EAB42B2AE0190015C92D /* HomeView.swift */; };
 		8B30EABF2B2AE4230015C92D /* MartelSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B30EAB82B2AE4220015C92D /* MartelSans-Bold.ttf */; };
 		8B30EAC02B2AE4230015C92D /* MartelSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B30EAB92B2AE4220015C92D /* MartelSans-Light.ttf */; };
@@ -29,6 +28,8 @@
 		8B6774462B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6774452B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift */; };
 		CE106DFB2BE4878000288DB5 /* Collapsible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFA2BE4878000288DB5 /* Collapsible.swift */; };
 		CE106DFD2BE56F9300288DB5 /* AddtoLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */; };
+		CE106DFF2BE57FAF00288DB5 /* HackerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFE2BE57FAF00288DB5 /* HackerTheme.swift */; };
+		CE106E012BE5802D00288DB5 /* UsaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106E002BE5802D00288DB5 /* UsaTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,6 @@
 		8B30EAAB2B2ADDCA0015C92D /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		8B30EAAD2B2ADDE90015C92D /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
 		8B30EAAF2B2ADE000015C92D /* MainTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTheme.swift; sourceTree = "<group>"; };
-		8B30EAB12B2ADE210015C92D /* AsianTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsianTheme.swift; sourceTree = "<group>"; };
 		8B30EAB42B2AE0190015C92D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8B30EAB82B2AE4220015C92D /* MartelSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MartelSans-Bold.ttf"; sourceTree = "<group>"; };
 		8B30EAB92B2AE4220015C92D /* MartelSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MartelSans-Light.ttf"; sourceTree = "<group>"; };
@@ -74,6 +74,8 @@
 		8B6774452B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesManagerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE106DFA2BE4878000288DB5 /* Collapsible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collapsible.swift; sourceTree = "<group>"; };
 		CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtoLog.swift; sourceTree = "<group>"; };
+		CE106DFE2BE57FAF00288DB5 /* HackerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerTheme.swift; sourceTree = "<group>"; };
+		CE106E002BE5802D00288DB5 /* UsaTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsaTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +108,9 @@
 			children = (
 				8B30EAAB2B2ADDCA0015C92D /* ThemeManager.swift */,
 				8B30EAAD2B2ADDE90015C92D /* ThemeProtocol.swift */,
+				CE106E002BE5802D00288DB5 /* UsaTheme.swift */,
 				8B30EAAF2B2ADE000015C92D /* MainTheme.swift */,
-				8B30EAB12B2ADE210015C92D /* AsianTheme.swift */,
+				CE106DFE2BE57FAF00288DB5 /* HackerTheme.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -343,12 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE106DFD2BE56F9300288DB5 /* AddtoLog.swift in Sources */,
-				8B30EAB22B2ADE210015C92D /* AsianTheme.swift in Sources */,
 				8B30EAB52B2AE0190015C92D /* HomeView.swift in Sources */,
 				8B67742B2B29D1BF000EC386 /* ContentView.swift in Sources */,
+				CE106E012BE5802D00288DB5 /* UsaTheme.swift in Sources */,
 				8B6774292B29D1BF000EC386 /* ThemesManagerDemoApp.swift in Sources */,
 				8B30EAAC2B2ADDCA0015C92D /* ThemeManager.swift in Sources */,
 				8B30EAAE2B2ADDE90015C92D /* ThemeProtocol.swift in Sources */,
+				CE106DFF2BE57FAF00288DB5 /* HackerTheme.swift in Sources */,
 				CE106DFB2BE4878000288DB5 /* Collapsible.swift in Sources */,
 				8B30EAB02B2ADE000015C92D /* MainTheme.swift in Sources */,
 			);
