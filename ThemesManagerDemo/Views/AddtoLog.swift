@@ -10,6 +10,7 @@ import Foundation
 
 struct AddtoLog: View {
     @EnvironmentObject private var themeManager: ThemeManager
+    @State private var isDoneTapped = false
     var body: some View {
         VStack {
             Text("Today, \(formattedDate)")
@@ -27,7 +28,6 @@ struct AddtoLog: View {
             .background(Color.clear)
             .border(Color.blue, width: 1)
             .frame(height: 400)
-            
         
         }
         .padding()

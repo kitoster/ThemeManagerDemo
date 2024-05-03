@@ -5,6 +5,7 @@ struct HomeView: View {
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var isForecastCollapsed = true
     @State private var isSummaryCollapsed = true
+    
 
     var body: some View {
         NavigationView {
