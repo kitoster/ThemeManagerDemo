@@ -13,23 +13,26 @@ struct AddtoLog: View {
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var selectedDate = Date()
     @State private var isDoneTapped = false
+    @State private var hasFlow: Bool = false
     
     var body: some View {
         VStack {
             Text("Selected Date: \(formattedDate)")
                 .padding(.bottom, 50) // Add padding beneath the text
+                .font(themeManager.selectedTheme.bodyTextFont)
+                .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
             // Date Picker
             CustomDatePicker(selectedDate: $selectedDate)
             // Symptoms text
-            ScrollView {
-                
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.")
-                    .padding()
-            }
-            .background(Color.clear)
-            .border(Color.blue, width: 1)
-            .frame(height: 400)
-            
+            // Symptoms text
+           Text("x")
+                .padding(.bottom, 10)
+            Text("Question 3")
+                .padding(.bottom, 10)
+            Text("Question 3")
+                .padding(.bottom, 10)
+            Text("Question 3")
+                .padding(.bottom, 10)
             // Done Button
             Button(action: {
                 isDoneTapped = true // Example action, you can handle it as needed
@@ -50,13 +53,13 @@ struct AddtoLog: View {
         }
         .padding()
     }
-        private var formattedDate: String {
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "MMMM dd, yyyy"
-                return dateFormatter.string(from: selectedDate)
+    private var formattedDate: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, yyyy"
+        return dateFormatter.string(from: selectedDate)
     }
+ 
 }
-
 
 struct AddtoLog_Previews: PreviewProvider {
     static var previews: some View {
