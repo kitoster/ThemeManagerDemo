@@ -7,38 +7,51 @@
 
 import SwiftUI
 import Foundation
+import SwiftUI
 
 struct AddtoLog: View {
     @EnvironmentObject private var themeManager: ThemeManager
+    @State private var selectedDate = Date()
     @State private var isDoneTapped = false
+    
     var body: some View {
         VStack {
-            Text("Today, \(formattedDate)")
-                .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
-                .background(Color.clear)
-                //Here I'll add a border with a color that's clear in dark mode but not in other modes.
-                .padding(.vertical, 20)
-                .font(themeManager.selectedTheme.textTitleFont)
-            
-            //For symptoms I'd love to have a mood option as well.
+            // Date Picker
+            CustomDatePicker(selectedDate: $selectedDate)
+            // Symptoms text
             ScrollView {
+                
+                Text("Selected Date")
+                
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.")
-                        .padding()
+                    .padding()
             }
             .background(Color.clear)
             .border(Color.blue, width: 1)
             .frame(height: 400)
-        
+            
+            // Done Button
+            Button(action: {
+                isDoneTapped = true // Example action, you can handle it as needed
+            }) {
+                Text("Done")
+                    .font(themeManager.selectedTheme.textTitleFont)
+                    .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
+                    .padding()
+                    .background(Color.clear)
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(themeManager.selectedTheme.primaryThemeColor, lineWidth: 1)
+                    )
+            }
+            .padding(.bottom, 20)
+            
         }
         .padding()
     }
 }
 
-private var formattedDate: String {
-       let dateFormatter = DateFormatter()
-       dateFormatter.dateFormat = "MMMM dd, yyyy" // Customize the date format as needed
-       return dateFormatter.string(from: Date())
-   }
 
 struct AddtoLog_Previews: PreviewProvider {
     static var previews: some View {

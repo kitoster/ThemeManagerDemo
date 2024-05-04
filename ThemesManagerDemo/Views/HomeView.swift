@@ -6,6 +6,9 @@ struct HomeView: View {
     @State private var isForecastCollapsed = true
     @State private var isSummaryCollapsed = true
     
+    //Things to implement:
+    //Date picker for the log. And can they upload their past stuff too? Maybe a year.
+    //Or maybe date picker is at the top of the log, and just defaults to today. 
 
     var body: some View {
         NavigationView {

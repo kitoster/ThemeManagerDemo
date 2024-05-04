@@ -31,6 +31,7 @@
 		CE106DFF2BE57FAF00288DB5 /* HackerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106DFE2BE57FAF00288DB5 /* HackerTheme.swift */; };
 		CE106E012BE5802D00288DB5 /* UsaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106E002BE5802D00288DB5 /* UsaTheme.swift */; };
 		CE106E042BE5884200288DB5 /* Menlo.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CE106E032BE5884200288DB5 /* Menlo.ttc */; };
+		CE106E062BE5D8F500288DB5 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		CE106DFE2BE57FAF00288DB5 /* HackerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerTheme.swift; sourceTree = "<group>"; };
 		CE106E002BE5802D00288DB5 /* UsaTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsaTheme.swift; sourceTree = "<group>"; };
 		CE106E032BE5884200288DB5 /* Menlo.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Menlo.ttc; path = ../../../../../../../System/Library/Fonts/Menlo.ttc; sourceTree = "<group>"; };
+		CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				8B67742A2B29D1BF000EC386 /* ContentView.swift */,
 				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
+				CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */,
 				CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */,
 				CE106DFA2BE4878000288DB5 /* Collapsible.swift */,
 			);
@@ -351,6 +354,7 @@
 			files = (
 				CE106DFD2BE56F9300288DB5 /* AddtoLog.swift in Sources */,
 				8B30EAB52B2AE0190015C92D /* HomeView.swift in Sources */,
+				CE106E062BE5D8F500288DB5 /* CustomDatePicker.swift in Sources */,
 				8B67742B2B29D1BF000EC386 /* ContentView.swift in Sources */,
 				CE106E012BE5802D00288DB5 /* UsaTheme.swift in Sources */,
 				8B6774292B29D1BF000EC386 /* ThemesManagerDemoApp.swift in Sources */,
