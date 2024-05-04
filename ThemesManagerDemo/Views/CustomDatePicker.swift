@@ -15,6 +15,6 @@ struct CustomDatePicker: View {
             .datePickerStyle(WheelDatePickerStyle())
             .labelsHidden()
             .frame(width: 100, height: 100) // Adjust size as needed
-            .padding(20)
+            .padding(.bottom, 40) // Apply padding beneath Element 2
     }
 }

@@ -16,12 +16,12 @@ struct AddtoLog: View {
     
     var body: some View {
         VStack {
+            Text("Selected Date: \(formattedDate)")
+                .padding(.bottom, 50) // Add padding beneath the text
             // Date Picker
             CustomDatePicker(selectedDate: $selectedDate)
             // Symptoms text
             ScrollView {
-                
-                Text("Selected Date")
                 
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.")
                     .padding()
@@ -49,6 +49,11 @@ struct AddtoLog: View {
             
         }
         .padding()
+    }
+        private var formattedDate: String {
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "MMMM dd, yyyy"
+                return dateFormatter.string(from: selectedDate)
     }
 }
 
