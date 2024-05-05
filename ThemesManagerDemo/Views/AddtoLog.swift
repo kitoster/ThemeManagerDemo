@@ -7,12 +7,10 @@
 
 import SwiftUI
 import Foundation
-import SwiftUI
 
 struct AddtoLog: View {
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var selectedDate = Date()
-    @State private var isSelectedColor = false // Default value for radio button
     @State private var isDoneTapped = false
     
     var body: some View {
@@ -24,7 +22,7 @@ struct AddtoLog: View {
             // Date Picker
             CustomDatePicker(selectedDate: $selectedDate)
             
-            RadioButton(label: "Selected Color", isSelected: $isSelectedColor)
+            YesNoQuestion(question: "Do you have any symptoms?")
             
             // Symptoms text
            Text("x")
@@ -55,10 +53,6 @@ struct AddtoLog: View {
         }
         .padding()
         //below is for debug
-        .onAppear {
-                    // Print the value of isSelectedColor when the view appears
-                    print("isSelectedColor: \(isSelectedColor)")
-                }
     }
     private var formattedDate: String {
         let dateFormatter = DateFormatter()
@@ -67,26 +61,6 @@ struct AddtoLog: View {
     }
  
 }
-
-struct RadioButton: View {
-    let label: String
-    @Binding var isSelected: Bool
-    
-    var body: some View {
-        Button(action: {
-            isSelected.toggle() // Toggle the isSelected state when tapped
-        }) {
-            HStack {
-                Image(systemName: isSelected ? "largecircle.fill.circle" : "circle")
-                    .resizable()
-                    .frame(width: 22, height: 22) // Adjust size as needed
-                    .foregroundColor(isSelected ? .blue : .gray)
-                Text(label)
-            }
-        }
-    }
-}
-
 
 
 struct AddtoLog_Previews: PreviewProvider {
