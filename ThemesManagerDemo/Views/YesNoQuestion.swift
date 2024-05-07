@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct YesNoQuestion: View {
+    @EnvironmentObject private var themeManager: ThemeManager
     @State private var isYesSelected = false // Default value
     let question: String
     
     var body: some View {
         VStack {
-            Toggle("Yes", isOn: $isYesSelected)
+            Toggle("Had flow?", isOn: $isYesSelected)
                 .toggleStyle(SwitchToggleStyle(tint: .green)) // Adjust color as needed
-            
+                
             if isYesSelected {
                 Text("You selected: Yes")
                     .foregroundColor(.green)
@@ -31,6 +32,7 @@ struct YesNoQuestion: View {
 
 struct YesNoQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        YesNoQuestion(question: "Do you have any symptoms?")
+        YesNoQuestion(question: "Had flow?")
+        .environmentObject(ThemeManager())
     }
 }

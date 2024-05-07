@@ -33,6 +33,7 @@
 		CE106E042BE5884200288DB5 /* Menlo.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CE106E032BE5884200288DB5 /* Menlo.ttc */; };
 		CE106E062BE5D8F500288DB5 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */; };
 		CEB003BE2BE7522100A7AAC6 /* YesNoQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB003BD2BE7522100A7AAC6 /* YesNoQuestion.swift */; };
+		CEF66B5E2BE9D4D10053AF5B /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF66B5D2BE9D4D10053AF5B /* CheckBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		CE106E032BE5884200288DB5 /* Menlo.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Menlo.ttc; path = ../../../../../../../System/Library/Fonts/Menlo.ttc; sourceTree = "<group>"; };
 		CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		CEB003BD2BE7522100A7AAC6 /* YesNoQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoQuestion.swift; sourceTree = "<group>"; };
+		CEF66B5D2BE9D4D10053AF5B /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
 				CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */,
 				CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */,
+				CEF66B5D2BE9D4D10053AF5B /* CheckBoxView.swift */,
 				CEB003BD2BE7522100A7AAC6 /* YesNoQuestion.swift */,
 				CE106DFA2BE4878000288DB5 /* Collapsible.swift */,
 			);
@@ -364,6 +367,7 @@
 				8B6774292B29D1BF000EC386 /* ThemesManagerDemoApp.swift in Sources */,
 				8B30EAAC2B2ADDCA0015C92D /* ThemeManager.swift in Sources */,
 				8B30EAAE2B2ADDE90015C92D /* ThemeProtocol.swift in Sources */,
+				CEF66B5E2BE9D4D10053AF5B /* CheckBoxView.swift in Sources */,
 				CE106DFF2BE57FAF00288DB5 /* HackerTheme.swift in Sources */,
 				CE106DFB2BE4878000288DB5 /* Collapsible.swift in Sources */,
 				8B30EAB02B2ADE000015C92D /* MainTheme.swift in Sources */,
