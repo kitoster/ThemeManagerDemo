@@ -7,12 +7,12 @@
 
 import SwiftUI
 import Foundation
-
 struct AddtoLog: View {
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var selectedDate = Date()
     @State private var isDoneTapped = false
-    
+    @State private var selectedIntensity: String? = nil
+
     var body: some View {
         VStack {
             Text("Selected Date: \(formattedDate)")
@@ -24,15 +24,15 @@ struct AddtoLog: View {
             
             YesNoQuestion(question: "Do you have any symptoms?")
             
-            // Symptoms text
-           Text("x")
-                .padding(.bottom, 10)
-            Text("Question 3")
-                .padding(.bottom, 10)
-            Text("Question 3")
-                .padding(.bottom, 10)
-            Text("Question 3")
-                .padding(.bottom, 10)
+            // Checkbox for Light
+            CheckboxView(text: "Light", option: "Light", selectedOption: $selectedIntensity)
+                       
+                       // Checkbox for Medium
+            CheckboxView(text: "Medium", option: "Medium", selectedOption: $selectedIntensity)
+                       
+                       // Checkbox for Heavy
+            CheckboxView(text: "Heavy", option: "Heavy", selectedOption: $selectedIntensity)
+            
             // Done Button
             Button(action: {
                 isDoneTapped = true // Example action, you can handle it as needed
@@ -54,14 +54,13 @@ struct AddtoLog: View {
         .padding()
         //below is for debug
     }
+    
     private var formattedDate: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMMM dd, yyyy"
         return dateFormatter.string(from: selectedDate)
     }
- 
 }
-
 
 struct AddtoLog_Previews: PreviewProvider {
     static var previews: some View {
