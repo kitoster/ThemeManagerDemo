@@ -12,10 +12,6 @@ struct AddtoLog: View {
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var selectedDate = Date()
     @State private var isDoneTapped = false
-    @State private var lightChecked = false
-    @State private var mediumChecked = false
-    @State private var heavyChecked = false
-    
     
     var body: some View {
         VStack {
@@ -26,12 +22,17 @@ struct AddtoLog: View {
             // Date Picker
             CustomDatePicker(selectedDate: $selectedDate)
             
-            YesNoQuestion(question: "Had flow?")
+            YesNoQuestion(question: "Do you have any symptoms?")
             
             // Symptoms text
-            CheckBoxView(title: "Light", isChecked: $lightChecked)
-            CheckBoxView(title: "Medium", isChecked: $mediumChecked)
-            CheckBoxView(title: "Heavy", isChecked: $heavyChecked)
+           Text("x")
+                .padding(.bottom, 10)
+            Text("Question 3")
+                .padding(.bottom, 10)
+            Text("Question 3")
+                .padding(.bottom, 10)
+            Text("Question 3")
+                .padding(.bottom, 10)
             // Done Button
             Button(action: {
                 isDoneTapped = true // Example action, you can handle it as needed
