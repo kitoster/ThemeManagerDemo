@@ -33,7 +33,7 @@
 		CE106E042BE5884200288DB5 /* Menlo.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CE106E032BE5884200288DB5 /* Menlo.ttc */; };
 		CE106E062BE5D8F500288DB5 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */; };
 		CE9EDE222BEAC37D00C0C975 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */; };
-		CE9EDE242BEAC82300C0C975 /* MultiCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDE232BEAC82300C0C975 /* MultiCheckboxView.swift */; };
+		CE9EDE2B2BEB115800C0C975 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDE2A2BEB115800C0C975 /* AnalysisView.swift */; };
 		CEB003BE2BE7522100A7AAC6 /* YesNoQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB003BD2BE7522100A7AAC6 /* YesNoQuestion.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +84,7 @@
 		CE106E032BE5884200288DB5 /* Menlo.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Menlo.ttc; path = ../../../../../../../System/Library/Fonts/Menlo.ttc; sourceTree = "<group>"; };
 		CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
-		CE9EDE232BEAC82300C0C975 /* MultiCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCheckboxView.swift; sourceTree = "<group>"; };
+		CE9EDE2A2BEB115800C0C975 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
 		CEB003BD2BE7522100A7AAC6 /* YesNoQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoQuestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,11 +128,11 @@
 		8B30EAB32B2ADFF90015C92D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE9EDE272BEB110000C0C975 /* Tabs */,
 				8B67742A2B29D1BF000EC386 /* ContentView.swift */,
 				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
 				CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */,
 				CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */,
-				CE9EDE232BEAC82300C0C975 /* MultiCheckboxView.swift */,
 				CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */,
 				CEB003BD2BE7522100A7AAC6 /* YesNoQuestion.swift */,
 				CE106DFA2BE4878000288DB5 /* Collapsible.swift */,
@@ -220,6 +220,14 @@
 				8B6774452B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift */,
 			);
 			path = ThemesManagerDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE9EDE272BEB110000C0C975 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				CE9EDE2A2BEB115800C0C975 /* AnalysisView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,7 +376,7 @@
 				8B67742B2B29D1BF000EC386 /* ContentView.swift in Sources */,
 				CE106E012BE5802D00288DB5 /* UsaTheme.swift in Sources */,
 				8B6774292B29D1BF000EC386 /* ThemesManagerDemoApp.swift in Sources */,
-				CE9EDE242BEAC82300C0C975 /* MultiCheckboxView.swift in Sources */,
+				CE9EDE2B2BEB115800C0C975 /* AnalysisView.swift in Sources */,
 				CE9EDE222BEAC37D00C0C975 /* CheckboxView.swift in Sources */,
 				8B30EAAC2B2ADDCA0015C92D /* ThemeManager.swift in Sources */,
 				8B30EAAE2B2ADDE90015C92D /* ThemeProtocol.swift in Sources */,

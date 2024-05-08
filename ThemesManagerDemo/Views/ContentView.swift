@@ -8,10 +8,26 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var themeManager = ThemeManager()
+
     var body: some View {
-        NavigationView {
-            HomeView()
-                .environmentObject(themeManager)
+        TabView {
+            NavigationView {
+                HomeView()
+                    .environmentObject(themeManager)
+            }
+            .tabItem {
+                Image(systemName: "house.fill")
+                Text("Home")
+            }
+            
+            NavigationView {
+                AnalysisView()
+                    .environmentObject(themeManager)
+            }
+            .tabItem {
+                Image(systemName: "gear")
+                Text("Analysis")
+            }
         }
     }
 }

@@ -6,9 +6,6 @@ struct HomeView: View {
     @State private var isForecastCollapsed = true
     @State private var isSummaryCollapsed = true
     
-    //Things to implement:
-    //Date picker for the log. And can they upload their past stuff too? Maybe a year.
-    //Or maybe date picker is at the top of the log, and just defaults to today. 
 
     var body: some View {
         NavigationView {
@@ -56,7 +53,7 @@ struct HomeView: View {
                         .cornerRadius(8)
                         .border(themeManager.selectedTheme.primaryThemeColor, width: 2) // Set the border color and width
                     }
-                    
+                                       
                 }
                 .padding()
                 .padding(.bottom, 20) // Add some padding at the bottom to separate the button from the collapsible views
