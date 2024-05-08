@@ -23,15 +23,16 @@ struct AddtoLog: View {
             CustomDatePicker(selectedDate: $selectedDate)
             
             YesNoQuestion(question: "Do you have any symptoms?")
+                .font(themeManager.selectedTheme.bodyTextFont)
+                .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
             
             // Checkbox for Light
             CheckboxView(text: "Light", option: "Light", selectedOption: $selectedIntensity)
-                       
-                       // Checkbox for Medium
+            // Checkbox for Medium
             CheckboxView(text: "Medium", option: "Medium", selectedOption: $selectedIntensity)
-                       
-                       // Checkbox for Heavy
+            // Checkbox for Heavy
             CheckboxView(text: "Heavy", option: "Heavy", selectedOption: $selectedIntensity)
+                        
             
             // Done Button
             Button(action: {

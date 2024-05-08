@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-
 struct CheckboxView: View {
+    @EnvironmentObject private var themeManager: ThemeManager
     let text: String
     let option: String
     @Binding var selectedOption: String?
@@ -15,8 +15,9 @@ struct CheckboxView: View {
     var body: some View {
         HStack {
             Text(text)
-                .foregroundColor(selectedOption == option ? .blue : .black)
+                .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
                 .padding(.trailing, 10) // Add padding to separate text and checkbox
+                .font(themeManager.selectedTheme.bodyTextFont)
             
             Spacer() // Pushes the checkbox to the right
             
@@ -33,5 +34,6 @@ struct CheckboxView: View {
 struct CheckboxView_Previews: PreviewProvider {
     static var previews: some View {
         CheckboxView(text: "Light", option: "Light", selectedOption: .constant(nil))
+        .environmentObject(ThemeManager())
     }
 }
