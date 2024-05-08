@@ -10,24 +10,13 @@ struct ContentView: View {
     @StateObject var themeManager = ThemeManager()
 
     var body: some View {
-        TabView {
-            NavigationView {
+        NavigationView {
+            VStack {
                 HomeView()
                     .environmentObject(themeManager)
+                    .navigationBarTitle("Shark")
             }
-            .tabItem {
-                Image(systemName: "house.fill")
-                Text("Home")
-            }
-            
-            NavigationView {
-                AnalysisView()
-                    .environmentObject(themeManager)
-            }
-            .tabItem {
-                Image(systemName: "gear")
-                Text("Analysis")
-            }
+            .overlay(BottomToolbar(), alignment: .bottom)
         }
     }
 }

@@ -6,6 +6,9 @@ struct HomeView: View {
     @State private var isForecastCollapsed = true
     @State private var isSummaryCollapsed = true
     
+    //Priority: GPT said toolbar should be moved from ContentView
+    //to something that can be higher up and encompass a lot of pages. 
+    
 
     var body: some View {
         NavigationView {
@@ -62,6 +65,7 @@ struct HomeView: View {
         }
     }
 }
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

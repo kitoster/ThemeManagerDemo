@@ -35,6 +35,7 @@
 		CE9EDE222BEAC37D00C0C975 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */; };
 		CE9EDE2B2BEB115800C0C975 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDE2A2BEB115800C0C975 /* AnalysisView.swift */; };
 		CEB003BE2BE7522100A7AAC6 /* YesNoQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB003BD2BE7522100A7AAC6 /* YesNoQuestion.swift */; };
+		CEF112A92BEC32F300A9400D /* BottomToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF112A82BEC32F300A9400D /* BottomToolbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
 		CE9EDE2A2BEB115800C0C975 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
 		CEB003BD2BE7522100A7AAC6 /* YesNoQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoQuestion.swift; sourceTree = "<group>"; };
+		CEF112A82BEC32F300A9400D /* BottomToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToolbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				CE9EDE272BEB110000C0C975 /* Tabs */,
 				8B67742A2B29D1BF000EC386 /* ContentView.swift */,
+				CEF112A82BEC32F300A9400D /* BottomToolbarView.swift */,
 				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
 				CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */,
 				CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */,
@@ -369,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF112A92BEC32F300A9400D /* BottomToolbarView.swift in Sources */,
 				CEB003BE2BE7522100A7AAC6 /* YesNoQuestion.swift in Sources */,
 				CE106DFD2BE56F9300288DB5 /* AddtoLog.swift in Sources */,
 				8B30EAB52B2AE0190015C92D /* HomeView.swift in Sources */,
