@@ -9,31 +9,24 @@ import SwiftUI
 
 struct MultiCheckboxView: View {
     let text: String
-    let option: String
-    @Binding var selectedOptions: Set<String>
+    @Binding var isSelected: Bool
 
     var body: some View {
         Button(action: {
-            if selectedOptions.contains(option) {
-                selectedOptions.remove(option)
-            } else {
-                selectedOptions.insert(option)
-            }
+            isSelected.toggle()
         }) {
             HStack {
-                Image(systemName: selectedOptions.contains(option) ? "checkmark.square.fill" : "square")
-                    .foregroundColor(selectedOptions.contains(option) ? .blue : .gray)
+                Image(systemName: isSelected ? "checkmark.square.fill" : "square")
+                    .foregroundColor(isSelected ? .blue : .gray)
                 Text(text)
-                    .foregroundColor(.black) // Set the text color to black
             }
         }
     }
 }
 
-
 struct MultiCheckboxView_Previews: PreviewProvider {
     static var previews: some View {
-        MultiCheckboxView(text: "Option", option: "Option", selectedOptions: .constant([]))
+        MultiCheckboxView(text: "Option", isSelected: .constant(false))
     }
 }
 

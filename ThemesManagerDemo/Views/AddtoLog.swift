@@ -32,7 +32,7 @@ struct AddtoLog: View {
             CheckboxView(text: "Medium", option: "Medium", selectedOption: $selectedIntensity)
             // Checkbox for Heavy
             CheckboxView(text: "Heavy", option: "Heavy", selectedOption: $selectedIntensity)
-            
+                        
             
             // Done Button
             Button(action: {
