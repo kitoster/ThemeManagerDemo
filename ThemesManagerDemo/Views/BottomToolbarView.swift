@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct BottomToolbar: View {
+    @EnvironmentObject private var themeManager: ThemeManager
     var body: some View {
         HStack {
             Spacer()
@@ -43,6 +42,7 @@ struct BottomToolbar: View {
 struct BottomToolbar_Previews: PreviewProvider {
     static var previews: some View {
         BottomToolbar()
+            .environmentObject(ThemeManager())
             .previewLayout(.fixed(width: 400, height: 80)) // Adjust preview layout as needed
     }
 }

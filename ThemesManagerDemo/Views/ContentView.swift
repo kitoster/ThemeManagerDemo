@@ -14,7 +14,6 @@ struct ContentView: View {
             VStack {
                 HomeView()
                     .environmentObject(themeManager)
-                    .navigationBarTitle("Shark")
             }
             .overlay(BottomToolbar(), alignment: .bottom)
         }
