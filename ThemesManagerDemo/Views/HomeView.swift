@@ -9,7 +9,6 @@ struct HomeView: View {
     //Priority: GPT said toolbar should be moved from ContentView
     //to something that can be higher up and encompass a lot of pages. 
     
-
     var body: some View {
         NavigationView {
             VStack {

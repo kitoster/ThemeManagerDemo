@@ -12,6 +12,9 @@ struct AddtoLog: View {
     @State private var selectedDate = Date()
     @State private var isDoneTapped = false
     @State private var selectedIntensity: String? = nil
+    @State private var isSelectedX = false
+    @State private var isSelectedY = false
+    @State private var isSelectedZ = false
 
     var body: some View {
         VStack {
@@ -32,6 +35,9 @@ struct AddtoLog: View {
             CheckboxView(text: "Medium", option: "Medium", selectedOption: $selectedIntensity)
             // Checkbox for Heavy
             CheckboxView(text: "Heavy", option: "Heavy", selectedOption: $selectedIntensity)
+            
+            CheckboxSymptomsView(optionX: "X", optionY: "Y", optionZ: "Z", isSelectedX: $isSelectedX, isSelectedY: $isSelectedY, isSelectedZ: $isSelectedZ)
+                       
                         
             
             // Done Button
