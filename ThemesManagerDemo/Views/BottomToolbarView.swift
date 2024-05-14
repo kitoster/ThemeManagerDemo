@@ -35,6 +35,7 @@ struct BottomToolbar: View {
             Spacer()
         }
         .background(Color.clear) // Set the background color to clear
+        .foregroundColor(themeManager.selectedTheme.primaryThemeColor) // Adjust the color as needed
         .padding() // Add padding to the toolbar
     }
 }

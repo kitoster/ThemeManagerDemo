@@ -17,11 +17,9 @@ struct YesNoQuestion: View {
                 .toggleStyle(SwitchToggleStyle(tint: .green)) // Adjust color as needed
             
             if isYesSelected {
-                Text("You selected: Yes")
-                    .foregroundColor(.green)
+               // do action
             } else {
-                Text("You selected: No")
-                    .foregroundColor(.red)
+                //do action
             }
         }
         .padding()

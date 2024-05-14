@@ -5,7 +5,7 @@ struct HomeView: View {
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var isForecastCollapsed = true
     @State private var isSummaryCollapsed = true
-    @State private var isNotesViewPresented = false // State variable to control the presentation of NotesView
+    @State private var isNotesViewPresented = false 
     
     var body: some View {
         NavigationView {
