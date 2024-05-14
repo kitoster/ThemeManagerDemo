@@ -19,26 +19,40 @@ struct AddtoLog: View {
     var body: some View {
         VStack {
             Text("Selected Date: \(formattedDate)")
-                .padding(.bottom, 50) // Add padding beneath the text
+                .padding(.bottom, 10) // Add padding beneath the text
                 .font(themeManager.selectedTheme.bodyTextFont)
                 .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(10)
+        
             // Date Picker
             CustomDatePicker(selectedDate: $selectedDate)
+                .padding(.top, 10) // Add padding beneath the text
             
             YesNoQuestion(question: "Do you have any symptoms?")
-                .font(themeManager.selectedTheme.bodyTextFont)
                 .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(10)
             
-            // Checkbox for Light
-            CheckboxView(text: "Light", option: "Light", selectedOption: $selectedIntensity)
-            // Checkbox for Medium
-            CheckboxView(text: "Medium", option: "Medium", selectedOption: $selectedIntensity)
-            // Checkbox for Heavy
-            CheckboxView(text: "Heavy", option: "Heavy", selectedOption: $selectedIntensity)
+            VStack {
+                // Checkbox for Light
+                CheckboxView(text: "Light", option: "Light", selectedOption: $selectedIntensity)
+                // Checkbox for Medium
+                CheckboxView(text: "Medium", option: "Medium", selectedOption: $selectedIntensity)
+                // Checkbox for Heavy
+                CheckboxView(text: "Heavy", option: "Heavy", selectedOption: $selectedIntensity)
+            }
+            .padding()
+            .background(Color.gray.opacity(0.1))
+            .cornerRadius(10)
             
-            CheckboxSymptomsView(optionX: "X", optionY: "Y", optionZ: "Z", isSelectedX: $isSelectedX, isSelectedY: $isSelectedY, isSelectedZ: $isSelectedZ)
-                       
-                        
+            VStack {
+                CheckboxSymptomsView(optionX: "Abdominal Cramps", optionY: "Bloating", optionZ: "Acne", isSelectedX: $isSelectedX, isSelectedY: $isSelectedY, isSelectedZ: $isSelectedZ)
+                
+            }
+            .padding()
+            .background(Color.gray.opacity(0.1))
+            .cornerRadius(10)
             
             // Done Button
             Button(action: {

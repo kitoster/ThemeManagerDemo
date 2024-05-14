@@ -41,6 +41,7 @@ struct CheckboxSymptomsView: View {
             }
             
         }
+        .foregroundColor(themeManager.selectedTheme.primaryThemeColor) // Change all text colors
         .padding(.horizontal) // Add horizontal padding to all checkmarks in the VStack 
     }
 }

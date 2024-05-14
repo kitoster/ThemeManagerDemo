@@ -25,7 +25,7 @@ struct CheckboxView: View {
                 selectedOption = option
             }) {
                 Image(systemName: selectedOption == option ? "checkmark.square.fill" : "square")
-                    .foregroundColor(selectedOption == option ? .blue : .gray)
+                    .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
             }
         }
     }

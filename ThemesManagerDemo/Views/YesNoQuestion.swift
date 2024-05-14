@@ -13,7 +13,7 @@ struct YesNoQuestion: View {
     
     var body: some View {
         VStack {
-            Toggle("Yes", isOn: $isYesSelected)
+            Toggle("Sharks in the water today?", isOn: $isYesSelected)
                 .toggleStyle(SwitchToggleStyle(tint: .green)) // Adjust color as needed
             
             if isYesSelected {
