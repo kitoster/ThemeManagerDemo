@@ -8,6 +8,7 @@
 import SwiftUI
 import Foundation
 struct AddtoLog: View {
+    @Environment(\.presentationMode) var presentationMode // Inject presentationMode
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var selectedDate = Date()
     @State private var isDoneTapped = false
@@ -73,6 +74,7 @@ struct AddtoLog: View {
                 // Done Button
                 Button(action: {
                     isDoneTapped = true // Example action, you can handle it as needed
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Done")
                         .font(themeManager.selectedTheme.textTitleFont)
