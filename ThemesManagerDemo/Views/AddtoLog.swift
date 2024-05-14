@@ -15,6 +15,9 @@ struct AddtoLog: View {
     @State private var isSelectedX = false
     @State private var isSelectedY = false
     @State private var isSelectedZ = false
+    @State private var isSelectedA = false
+    @State private var isSelectedB = false
+    @State private var isSelectedC = false
 
     var body: some View {
         VStack {
@@ -34,7 +37,9 @@ struct AddtoLog: View {
                 .background(Color.gray.opacity(0.1))
                 .cornerRadius(10)
             
-            VStack {
+            VStack { // Level Stack
+                Text("Level")
+                    
                 // Checkbox for Light
                 CheckboxView(text: "Light", option: "Light", selectedOption: $selectedIntensity)
                 // Checkbox for Medium
@@ -42,17 +47,27 @@ struct AddtoLog: View {
                 // Checkbox for Heavy
                 CheckboxView(text: "Heavy", option: "Heavy", selectedOption: $selectedIntensity)
             }
-            .padding()
-            .background(Color.gray.opacity(0.1))
-            .cornerRadius(10)
+                .padding()
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(10)
+            
+            VStack { //Symptom Stack
+                Text("Symptoms")
+                    .font(.headline)
+                    .padding(.bottom, 10) // Add some spacing below the text
+                
+                CheckboxSymptomsView(optionX: "Abdominal Cramps", optionY: "Acne", optionZ: "Appetite Change", optionA: "Bloating", optionB: "Bladder Incontinence", optionC: "Breast Pain", isSelectedX: $isSelectedX, isSelectedY: $isSelectedY, isSelectedZ: $isSelectedZ, isSelectedA: $isSelectedA, isSelectedB: $isSelectedB, isSelectedC: $isSelectedC)
+            }
+                .padding()
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(10)
             
             VStack {
-                CheckboxSymptomsView(optionX: "Abdominal Cramps", optionY: "Bloating", optionZ: "Acne", isSelectedX: $isSelectedX, isSelectedY: $isSelectedY, isSelectedZ: $isSelectedZ)
-                
+                Text("Mood")
             }
-            .padding()
-            .background(Color.gray.opacity(0.1))
-            .cornerRadius(10)
+                .padding()
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(10)
             
             // Done Button
             Button(action: {
