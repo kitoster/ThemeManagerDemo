@@ -23,7 +23,7 @@ struct CheckboxSymptomsView: View {
     @Binding var isSelectedC: Bool
 
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(spacing: 0) {
             HStack {
                 Text(optionX)
                 Spacer()
@@ -69,7 +69,6 @@ struct CheckboxSymptomsView: View {
                        }
                    }
                    .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
-                   .padding(.horizontal)
                    .font(themeManager.selectedTheme.bodyTextFont)
                }
            }
@@ -82,7 +81,7 @@ struct CheckboxRowView: View {
 
     var body: some View {
         Button(action: action) {
-            HStack(alignment: .center, spacing: 10) {
+            HStack() {
                 Image(systemName: isSelected ? "checkmark.square" : "square")
                     .resizable()
                     .frame(width: 15, height: 15)
