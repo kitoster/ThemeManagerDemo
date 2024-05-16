@@ -9,6 +9,9 @@ import SwiftUI
  Asian Theme
  */
 struct Hacker: ThemeProtocol {
+    var id: UUID = UUID()
+    let name = "Hacker"
+    
     var largeTitleFont: Font = .custom("Menlo", size: 30.0)
     var textTitleFont: Font = .custom("Menlo", size: 20.0)
     var normalBtnTitleFont: Font = .custom("Menlo", size: 20.0)

@@ -9,6 +9,8 @@ import SwiftUI
  Protocol for themes
  */
 protocol ThemeProtocol {
+    var id: UUID { get }
+    var name: String { get }
     var largeTitleFont: Font { get }
     var textTitleFont: Font { get }
     var normalBtnTitleFont: Font { get }
