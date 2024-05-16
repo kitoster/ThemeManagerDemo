@@ -20,6 +20,11 @@ struct AddtoLog: View {
     @State private var isSelectedB = false
     @State private var isSelectedC = false
     @State private var isDatePickerVisible = false // State variable to control the visibility of the date picker
+    @State private var selectedMoods: [String] = []
+    @State private var isSelectedHappy = false
+    @State private var isSelectedSad = false
+    @State private var isSelectedDepressed = false
+    @State private var isSelectedMad = false
 
 
     var body: some View {
@@ -70,8 +75,9 @@ struct AddtoLog: View {
                 .background(Color.gray.opacity(0.1))
                 .cornerRadius(10)
                 
+                Text("Mood")
                 VStack {
-                    Text("Mood")
+                    MoodPickerView(isSelectedHappy: $isSelectedHappy, isSelectedSad: $isSelectedSad, isSelectedDepressed: $isSelectedDepressed, isSelectedMad: $isSelectedMad)
                 }
                 .padding()
                 .background(Color.gray.opacity(0.1))
