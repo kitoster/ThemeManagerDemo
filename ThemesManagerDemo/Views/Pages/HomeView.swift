@@ -1,7 +1,7 @@
 import SwiftUI
 import Foundation
 
-//UI Goals:
+//Goals:
 //Page for theme chooser, including dark mode. 
 
 struct HomeView: View {

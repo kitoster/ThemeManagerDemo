@@ -33,6 +33,7 @@
 		CE106E042BE5884200288DB5 /* Menlo.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CE106E032BE5884200288DB5 /* Menlo.ttc */; };
 		CE106E062BE5D8F500288DB5 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */; };
 		CE29405D2BF5A06800451C64 /* MoodPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29405C2BF5A06800451C64 /* MoodPickerView.swift */; };
+		CE29405F2BF5A8A600451C64 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29405E2BF5A8A600451C64 /* SettingsView.swift */; };
 		CE712D442BF4275000CCE093 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE712D432BF4275000CCE093 /* NotesView.swift */; };
 		CE9A7CCD2BEC71290073DBC5 /* CheckboxSymptomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A7CCC2BEC71290073DBC5 /* CheckboxSymptomsView.swift */; };
 		CE9EDE222BEAC37D00C0C975 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */; };
@@ -88,6 +89,7 @@
 		CE106E032BE5884200288DB5 /* Menlo.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Menlo.ttc; path = ../../../../../../../System/Library/Fonts/Menlo.ttc; sourceTree = "<group>"; };
 		CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		CE29405C2BF5A06800451C64 /* MoodPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPickerView.swift; sourceTree = "<group>"; };
+		CE29405E2BF5A8A600451C64 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CE712D432BF4275000CCE093 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		CE9A7CCC2BEC71290073DBC5 /* CheckboxSymptomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxSymptomsView.swift; sourceTree = "<group>"; };
 		CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
@@ -138,10 +140,9 @@
 			children = (
 				CE9EDE272BEB110000C0C975 /* Tabs */,
 				8B67742A2B29D1BF000EC386 /* ContentView.swift */,
+				CE2940602BF5A8B400451C64 /* Pages */,
 				CEF112A82BEC32F300A9400D /* BottomToolbarView.swift */,
-				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
 				CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */,
-				CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */,
 				CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */,
 				CE9A7CCC2BEC71290073DBC5 /* CheckboxSymptomsView.swift */,
 				CE29405C2BF5A06800451C64 /* MoodPickerView.swift */,
@@ -231,6 +232,16 @@
 				8B6774452B29D1C1000EC386 /* ThemesManagerDemoUITestsLaunchTests.swift */,
 			);
 			path = ThemesManagerDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE2940602BF5A8B400451C64 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
+				CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */,
+				CE29405E2BF5A8A600451C64 /* SettingsView.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		CE9EDE272BEB110000C0C975 /* Tabs */ = {
@@ -399,6 +410,7 @@
 				CE29405D2BF5A06800451C64 /* MoodPickerView.swift in Sources */,
 				CE106DFB2BE4878000288DB5 /* Collapsible.swift in Sources */,
 				8B30EAB02B2ADE000015C92D /* MainTheme.swift in Sources */,
+				CE29405F2BF5A8A600451C64 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

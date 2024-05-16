@@ -16,7 +16,7 @@ struct Collapsible<Content: View>: View {
     var body: some View {
         VStack {
             Button(
-                action: { self.collapsed.toggle() },
+                action:  { withAnimation(nil) { self.collapsed.toggle() } },
                 label: {
                     HStack {
                         self.label()
@@ -34,8 +34,8 @@ struct Collapsible<Content: View>: View {
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: collapsed ? 0 : .none)
             .clipped()
-            //an animation should go here but not sure how, .animation was deprecated!
-            .transition(.slide)
+            //.animation(nil)
+            //.transition(.slide)
         }
     }
 }

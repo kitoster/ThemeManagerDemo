@@ -9,7 +9,7 @@ import SwiftUI
 import Foundation
 struct AddtoLog: View {
     // Environment Objects
-    @Environment(\.presentationMode) var presentationMode // Inject presentationMode
+    @Environment(\.presentationMode) var presentationMode // Inject presentation mode
     @EnvironmentObject private var themeManager: ThemeManager
     
     // Date and Button Variables
