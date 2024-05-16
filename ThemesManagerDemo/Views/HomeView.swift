@@ -1,6 +1,9 @@
 import SwiftUI
 import Foundation
 
+//UI Goals:
+//Page for theme chooser, including dark mode. 
+
 struct HomeView: View {
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var isForecastCollapsed = true

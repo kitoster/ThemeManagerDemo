@@ -141,7 +141,6 @@
 				CEF112A82BEC32F300A9400D /* BottomToolbarView.swift */,
 				8B30EAB42B2AE0190015C92D /* HomeView.swift */,
 				CE106E052BE5D8F500288DB5 /* CustomDatePicker.swift */,
-				CE712D432BF4275000CCE093 /* NotesView.swift */,
 				CE106DFC2BE56F9300288DB5 /* AddtoLog.swift */,
 				CE9EDE212BEAC37D00C0C975 /* CheckboxView.swift */,
 				CE9A7CCC2BEC71290073DBC5 /* CheckboxSymptomsView.swift */,
@@ -238,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9EDE2A2BEB115800C0C975 /* AnalysisView.swift */,
+				CE712D432BF4275000CCE093 /* NotesView.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";

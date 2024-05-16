@@ -8,18 +8,23 @@
 import SwiftUI
 import Foundation
 struct AddtoLog: View {
+    // Environment Objects
     @Environment(\.presentationMode) var presentationMode // Inject presentationMode
     @EnvironmentObject private var themeManager: ThemeManager
+    
+    // Date and Button Variables
     @State private var selectedDate = Date()
     @State private var isDoneTapped = false
-    @State private var selectedIntensity: String? = nil
+    @State private var isDatePickerVisible = false
+    
+    // User Option Variables
     @State private var isSelectedX = false
     @State private var isSelectedY = false
     @State private var isSelectedZ = false
     @State private var isSelectedA = false
     @State private var isSelectedB = false
     @State private var isSelectedC = false
-    @State private var isDatePickerVisible = false // State variable to control the visibility of the date picker
+    @State private var selectedIntensity: String? = nil
     @State private var selectedMoods: [String] = []
     @State private var isSelectedHappy = false
     @State private var isSelectedSad = false
