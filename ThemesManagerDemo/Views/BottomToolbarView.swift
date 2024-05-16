@@ -10,35 +10,34 @@ import SwiftUI
 struct BottomToolbar: View {
     @EnvironmentObject private var themeManager: ThemeManager
     var body: some View {
-        HStack {
-            Spacer()
-            Button(action: {
-                // Action for the first button
-            }) {
-                Image(systemName: "square.and.arrow.up")
-                    .padding()
+            HStack {
+                Spacer()
+                Button(action: {
+                    // Action for the first button
+                }) {
+                    Image(systemName: "square.and.arrow.up")
+                        .padding()
+                }
+                Spacer()
+                Button(action: {
+                    // Action for the second button
+                }) {
+                    Image(systemName: "house.fill")
+                        .padding()
+                }
+                Spacer()
+                NavigationLink(destination: SettingsView()) {
+                    Image(systemName: "gear")
+                        .padding()
+                }
+                .buttonStyle(PlainButtonStyle()) // Make the NavigationLink look like a button
+                Spacer()
             }
-            Spacer()
-            Button(action: {
-                // Action for the second button
-            }) {
-                Image(systemName: "house.fill")
-                    .padding()
-            }
-            Spacer()
-            Button(action: {
-                // Action for the third button
-            }) {
-                Image(systemName: "gear")
-                    .padding()
-            }
-            Spacer()
+            .background(Color.clear) // Set the background color to clear
+            .foregroundColor(themeManager.selectedTheme.primaryThemeColor) // Adjust the color as needed
+            .padding() // Add padding to the toolbar
         }
-        .background(Color.clear) // Set the background color to clear
-        .foregroundColor(themeManager.selectedTheme.primaryThemeColor) // Adjust the color as needed
-        .padding() // Add padding to the toolbar
     }
-}
 
 struct BottomToolbar_Previews: PreviewProvider {
     static var previews: some View {
