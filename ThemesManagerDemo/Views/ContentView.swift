@@ -17,6 +17,7 @@ struct ContentView: View {
             }
             .overlay(BottomToolbar(), alignment: .bottom)
         }
+        .environmentObject(themeManager)
     }
 }
 

@@ -1,9 +1,7 @@
-//
-//  ThemeManager.swift
-//  ThemesManagerDemo
-//
-//  Created by Tharindu Ketipearachchi on 2023-12-14.
-//
+
+//Themes: Hacker, Usa, Shark, Arcade
+//More theme ideas: Bugs from Katie, Dinosaurs from Riley :) 
+
 import SwiftUI
 /**
  Theme Manager

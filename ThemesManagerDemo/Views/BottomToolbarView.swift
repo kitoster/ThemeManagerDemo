@@ -26,7 +26,7 @@ struct BottomToolbar: View {
                         .padding()
                 }
                 Spacer()
-                NavigationLink(destination: SettingsView()) {
+                NavigationLink(destination: SettingsView().environmentObject(themeManager)) {
                     Image(systemName: "gear")
                         .padding()
                 }

@@ -2,7 +2,8 @@ import SwiftUI
 import Foundation
 
 //Goals:
-//Page for theme chooser, including dark mode. 
+//Page for theme chooser, including dark mode.
+//T shots and E shots tracker 
 
 struct HomeView: View {
     @EnvironmentObject private var themeManager: ThemeManager
