@@ -18,6 +18,8 @@ struct MainTheme: ThemeProtocol {
     var boldBtnTitleFont: Font = .custom("MartelSans-Bold", size: 20.0)
     var bodyTextFont: Font = .custom("MartelSans-Light", size: 18.0)
     var captionTxtFont: Font = .custom("MartelSans-SemiBold", size: 20.0)
+    let imageName = "mainImage" // Example image name
+
     
     var primaryThemeColor: Color { return Color("mnPrimaryThemeColor") }
     var secondoryThemeColor: Color { return Color("mnSecondoryThemeColor") }

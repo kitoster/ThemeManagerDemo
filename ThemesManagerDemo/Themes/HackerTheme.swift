@@ -18,6 +18,8 @@ struct Hacker: ThemeProtocol {
     var boldBtnTitleFont: Font = .custom("Menlo", size: 20.0)
     var bodyTextFont: Font = .custom("Menlo", size: 18.0)
     var captionTxtFont: Font = .custom("Menlo", size: 20.0)
+    let imageName = "hackerImage1" // Example image name
+
     
     var primaryThemeColor: Color { return Color("asPrimaryThemeColor") }
     var secondoryThemeColor: Color { return Color("asSecondoryThemeColor") }

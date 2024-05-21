@@ -13,18 +13,18 @@ struct ThemePickerView: View {
         VStack {
             Text("Select a Theme")
                 .font(.title)
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
             
             TabView {
                 ForEach(themeManager.themes, id: \.id) { theme in
                     ThemeCardView(theme: theme) {
                         themeManager.chooseTheme(theme)
                     }
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 40)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
-            .frame(height: 300) // Adjust height as needed
+            .frame(height: 500) // Adjust height as needed
         }
     }
 }
@@ -35,25 +35,33 @@ struct ThemeCardView: View {
     let action: () -> Void
     
     var body: some View {
-        VStack {
-            Text(theme.name)
-                .font(.headline)
-                .padding()
-            Button(action: action) {
-                Text("Select")
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
+            VStack {
+                Image(theme.imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200) // Adjust height as needed
                     .cornerRadius(8)
+                    .padding(.bottom, 10)
+                
+                Text(theme.name)
+                    .font(.headline)
+                    .padding(.bottom, 10)
+                
+                Button(action: action) {
+                    Text("Select")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
             }
+            .padding()
+            .background(Color.gray.opacity(0.2))
+            .cornerRadius(12)
+            .shadow(radius: 5)
+            .padding(.horizontal, 20) // Add horizontal padding to make the card wider
         }
-        .padding()
-        .background(Color.gray.opacity(0.2))
-        .cornerRadius(12)
-        .shadow(radius: 5)
     }
-}
-
 
 
 struct ThemePickerView_Previews: PreviewProvider {

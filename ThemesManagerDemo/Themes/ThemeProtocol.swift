@@ -17,6 +17,7 @@ protocol ThemeProtocol {
     var boldBtnTitleFont: Font { get }
     var bodyTextFont: Font { get }
     var captionTxtFont: Font { get }
+    var imageName: String { get } 
     
     var primaryThemeColor: Color { get }
     var secondoryThemeColor: Color { get }
