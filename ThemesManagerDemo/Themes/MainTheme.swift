@@ -10,7 +10,7 @@ import SwiftUI
  */
 struct MainTheme: ThemeProtocol {
     var id: UUID = UUID()
-    let name = "Main"
+    let name = "MainTheme"
     
     var largeTitleFont: Font = .custom("MartelSans-ExtraBold", size: 30.0)
     var textTitleFont: Font = .custom("MartelSans-ExtraBold", size: 22.0)
@@ -18,7 +18,7 @@ struct MainTheme: ThemeProtocol {
     var boldBtnTitleFont: Font = .custom("MartelSans-Bold", size: 20.0)
     var bodyTextFont: Font = .custom("MartelSans-Light", size: 18.0)
     var captionTxtFont: Font = .custom("MartelSans-SemiBold", size: 20.0)
-    let imageName = "mainImage" // Example image name
+    let imageName = "mainImage1" // Example image name
 
     
     var primaryThemeColor: Color { return Color("mnPrimaryThemeColor") }
