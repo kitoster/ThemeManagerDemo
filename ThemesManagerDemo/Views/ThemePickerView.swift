@@ -12,12 +12,15 @@ struct ThemePickerView: View {
     var body: some View {
         VStack {
             Text("Select a Theme")
+                .font(.title)
+                .padding(.bottom, 20)
+            
             TabView {
                 ForEach(themeManager.themes, id: \.id) { theme in
                     ThemeCardView(theme: theme) {
                         themeManager.chooseTheme(theme)
                     }
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 40)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
@@ -53,7 +56,7 @@ struct ThemeCardView: View {
                 }
             }
             .padding()
-            .background(Color.gray.opacity(0.1))
+            .background(Color.gray.opacity(0.2))
             .cornerRadius(12)
             .shadow(radius: 5)
             .padding(.horizontal, 20) // Add horizontal padding to make the card wider
